@@ -18,6 +18,18 @@ $(document).ready(function(){
 
   $('.featured-item:first h4').append('<span class="badge bg-secondary">Novo</span>')
 
-  $('.featured-item h4')
+  $('.featured-item h4').click( function(){
+    $(this).css({
+    'color': '#f00',
+    'background': '#ff0',
+    'font-weight': '100'
+  })
+  });
+
+  // Manipulação de eventos
+  $('.featured-item a').on('blur',function(event){
+    event.preventDefault();
+    alert('Produto esgotado');
+  })
 
 })

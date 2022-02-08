@@ -8,10 +8,57 @@
   <link rel="stylesheet" href="./Vendor/bootstrap/css/bootstrap.min.css">
   <!--CSS CAROUSEL OWL-->
   <link rel="stylesheet" href="./Vendor/owl/css/owl.css">
+  <!--CSS STYLES-->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./Vendor/fontawesome/fontawesome.css">
   <!--TITULO-->
-  <title>jQuery</title>
+  <title>WebStore</title>
 </head>
 
+<!--MENU-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="assets/images/header-logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Sobre nós</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--BANNER-->
+<div class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="caption">
+          <h2>WebStore</h2>
+          <div class="line-dec"></div>
+          <p>Roupas para todas as pessoas, compre aqui de forma rápida e segura! </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--PRODUTOS-->
 <body>
   <div id="featured" class="featured-items">
     <div class="container">
@@ -102,14 +149,61 @@
     </div>
   </div>
   
-  <!--JS JQUERY-->
-  <script src="./Vendor/jquery/jquery-3.6.0.min.js"></script>
-  <!--JS BOOTSTRAP-->
-  <script src="./Vendor/bootstrap/js/bootstrap.min.js"></script>
-  <!--JS CAROUSEL OWL-->
-  <script src="./Vendor/owl/js/owl.js"></script>
-  <!--JS-->
-  <script src="./js/custom.js"></script>
-
-</body>
-</html>
+<!--FOOTER-->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="logo">
+            <img src="assets/images/header-logo.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="footer-menu">
+            <ul>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="#">Ajuda</a></li>
+              <li><a href="#">Política de Privacidade</a></li>
+              <li><a href="#">Como trabalhamos</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="social-icons">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!--BARRA-->
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright-text">
+            <p>WebStore &copy; Todos os direitos reservados
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--JS JQUERY-->
+    <script src="./Vendor/jquery/jquery-3.6.0.min.js"></script>
+    <!--JS BOOTSTRAP-->
+    <script src="./Vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--JS CAROUSEL OWL-->
+    <script src="./Vendor/owl/js/owl.js"></script>
+    <!--JS-->
+    <script src="./js/custom.js"></script>
+    
+  </body>
+  </html>

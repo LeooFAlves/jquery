@@ -84,6 +84,48 @@ $(document).ready(function(){
 
   })
 
+  // Validação Formulário
+
+  function validate(elem) {
+    if (elem.val() == '') {
+      console.log('O campo de ' + elem.attr('name') + ' é obrigatório')
+
+      elem.addClass('invalid')
+
+      return false
+    } else {
+      elem.removeClass('invalid')
+    }
+  }
+
+  $('body').on('submit', '.modal-body .form', function(e){
+
+    e.preventDefault();
+
+    const inputName = $('#nome')
+    const inputEmail = $('#email')
+
+    validate(inputName)
+    validate(inputEmail)
+
+    if(inputEmail.hasClass('invalid') || inputName.hasClass('invalid')){
+      console.log('Verificar campos obrigatórios')
+      return false
+    } else {
+      $(this).submit()
+    }
+
+  })
+
+  $('body').on('blur', '#nome', function(e){
+    validate($(this))
+
+  })
+
+    $('body').on('blur', '#email', function (e) {
+      validate($(this))
+    })
+
 
 
 })

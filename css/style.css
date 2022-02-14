@@ -858,3 +858,7 @@ a {
 #email {
   position: relative;
 }
+
+.invalid {
+  border-color: #f00;
+}

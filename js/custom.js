@@ -30,7 +30,7 @@ $(document).ready(function(){
   $('.featured-item a').on('blur',function(event){
     event.preventDefault();
     alert('Produto esgotado');
-  })
+    })
   
   //Callback
   //$('.featured-item:nth(1)')

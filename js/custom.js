@@ -27,10 +27,10 @@ $(document).ready(function(){
   });
   
   // Manipulação de eventos
-  $('.featured-item a').on('blur',function(event){
-    event.preventDefault();
-    alert('Produto esgotado');
-    })
+  //$('.featured-item a').on('blur',function(event){
+    //event.preventDefault();
+    //alert('Produto esgotado');
+    //})
   
   //Callback
   //$('.featured-item:nth(1)')
@@ -86,9 +86,9 @@ $(document).ready(function(){
 
   // Validação Formulário
 
-  function validate(elem) {
-    if (elem.val() == '') {
-      console.log('O campo de ' + elem.attr('name') + ' é obrigatório')
+  function validate( elem ) {
+    if ( elem.val() == '') {
+      console.log('O campo de '+ elem.attr('name') + ' é obrigatório')
 
       elem.addClass('invalid')
 
@@ -117,12 +117,12 @@ $(document).ready(function(){
 
   })
 
-  $('body').on('blur', '#nome', function(e){
+  $('body').on('blur', '#nome', function(){
     validate($(this))
 
   })
 
-    $('body').on('blur', '#email', function (e) {
+    $('body').on('blur', '#email', function () {
       validate($(this))
     })
 

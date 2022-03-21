@@ -251,15 +251,46 @@
     <form action="post" class="form">
       <div class="mb-3">
         <label for="nome" class="form-label">Nome:</label>
-        <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu Nome" aria-describedby="helpNome">
+        <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu Nome" aria-describedby="helpNome" required>
         <small id="helpNome" class="text-muted">Digite um nome válido</small>
       </div>
       
       <div class="mb-3">
         <label for="email" class="form-label">E-mail:</label>
-        <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu E-mail" aria-describedby="helpEmail">
+        <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu E-mail" aria-describedby="helpEmail" required>
         <small id="helpEmail" class="text-muted">Digite um e-mail válido</small>
       </div>
+      
+      <div class="mb-3">
+        <label for="date" class="form-label">Data:</label>
+        <input type="text" name="date" id="date" class="form-control" placeholder="Digite a data" aria-describedby="helpDate" required>
+        <small id="helpDate" class="text-muted">Digite uma data válida</small>
+      </div>
+      
+      <div class="mb-3">
+        <label for="time" class="form-label">Hora:</label>
+        <input type="text" name="time" id="time" class="form-control" placeholder="Digite o horário" aria-describedby="helpTime" required>
+        <small id="helpTime" class="text-muted">Digite uma hora válida</small>
+      </div>
+      
+      <div class="mb-3">
+        <label for="cep" class="form-label">CEP:</label>
+        <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite o seu CEP" aria-describedby="helpCep" required>
+        <small id="helpCep" class="text-muted">Digite um CEP válido</small>
+      </div>
+      
+      <div class="mb-3">
+        <label for="phone" class="form-label">Celular:</label>
+        <input type="text" name="phone" id="phone" class="form-control" placeholder="Digite o seu Celular" aria-describedby="helpCelular" required>
+        <small id="helpCelular" class="text-muted">Digite um Celular válido</small>
+      </div>
+      
+      <div class="mb-3">
+        <label for="cpf" class="form-label">CPF:</label>
+        <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite o seu CPF" aria-describedby="helpCpf" required>
+        <small id="helpCpf" class="text-muted">Digite um CPF válido</small>
+      </div>
+      
       <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
   </div>
@@ -277,6 +308,8 @@
   <script src="./Vendor/bootstrap/js/bootstrap.min.js"></script>
   <!--JS CAROUSEL OWL-->
   <script src="./Vendor/owl/js/owl.js"></script>
+  <!--JS  JQUERY MASK ( VALIDAÇÃO DE FORMULÁRIOS)-->
+  <script src="./Vendor/jquery-mask/jquery.mask.min.js"></script>
   <!--JS-->
   <script src="./js/custom.js"></script>
   

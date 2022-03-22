@@ -138,6 +138,10 @@ $(document).ready(function(){
   $('body').on('blur', '#email', function () {
     validate($(this))
   })
+
+  $('body').on('focus', '#date', function(){
+    $(this).datepicker()
+  })
   
   $('body').on('blur', '#date', function () {
     validate($(this))
